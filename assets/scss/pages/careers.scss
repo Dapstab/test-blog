@@ -1,0 +1,46 @@
+@use "../partials/base";
+
+.content {
+    display: flex;
+    //Como las secciones de nurse y engineer comparten mucho css, colocamos el css repetido en section
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    //De igual manera hacemos con los links, ya que solo cambian los colores
+    a {
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem 2rem;
+        border-radius: 20px;
+        width: 23rem;
+    }
+    .nurse__section {
+        background-image: url("../img/nurse__background.png");
+        background-color: rgba(0, 0, 0, 0.945);
+        a, a:visited {
+            color: var(--opposite-main-color);
+            background-color: var(--main-color);
+            &:hover {
+                background-color: var(--main-hover-color);
+            }
+            
+        }
+    }
+    .engineer__section {
+        background-image: url("../img/engineer__background.png");
+        background-color: var(--main-color);
+        a, a:visited {
+            color: var(--main-color);
+            background-color: var(--opposite-main-color);
+            &:hover {
+                background-color: var(--opposite-main-hover-color);
+            }
+        }
+    }
+}

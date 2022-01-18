@@ -1,0 +1,40 @@
+@use "../partials/base";
+
+body {
+    background-color: var(--opposite-main-color);
+}
+
+.content {
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: auto;
+    margin-right: 5vw;
+    .title__container {
+        padding-left: 1.5rem;
+        margin: auto 7rem auto 0;
+        border-left: 3px solid var(--secondary-dark-color);
+    }
+    .main__title {
+        font-family: "Impact";
+        letter-spacing: 2px;
+        font-size: 2.5rem;
+        color: var(--main-color);
+        .blog__link {
+            color: var(--secondary-color);
+        }
+        margin-bottom: 15rem;
+    }
+    p {
+        color: var(--main-color);
+        width: 29rem;
+        font-size: 1.5rem;
+        letter-spacing: .1px;
+    }
+    .about__link {
+        color: var(--secondary-light-color);
+    }
+}
+
+
