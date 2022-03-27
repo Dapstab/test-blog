@@ -9,12 +9,18 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    margin-left: auto;
-    margin-right: 5vw;
+    justify-content: center;
+    position: relative;
     .title__container {
         padding-left: 1.5rem;
-        margin: auto 7rem auto 0;
+        margin: 0 7rem auto auto;
         border-left: 3px solid var(--secondary-dark-color);
+    }
+    img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 45%;
     }
     .main__title {
         font-family: "Impact";
@@ -38,3 +44,8 @@ body {
 }
 
 
+@media(max-width: 500px) {
+    .content img {
+        position: relative;
+    }
+}

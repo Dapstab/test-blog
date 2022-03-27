@@ -1,0 +1,44 @@
+:root {
+  --main-color: white;
+  --main-hover-color: #d6d6d6;
+  --secondary-color: #F6921E;
+  --secondary-hover-color: #FCA33D;
+  --secondary-dark-color: #F47721;
+  --secondary-light-color: #FAAF3B;
+  --opposite-main-color: black;
+  --opposite-main-hover-color: rgb(51, 51, 51);
+  --tertiary-color: #3A81BB;
+  --tertiary-hover-color: #4594d4;
+}
+
+/* RESET */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Impact";
+  src: url("/assets/fonts/impact.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("/assets/fonts/MYRIADPRO-REGULAR.woff") format("woff");
+}
+body {
+  font-family: "Myriad Pro";
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--main-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=about.css.map */

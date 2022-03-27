@@ -2,11 +2,14 @@
 
 .content {
     display: flex;
+    flex-wrap: wrap;
     //Como las secciones de nurse y engineer comparten mucho css, colocamos el css repetido en section
     section {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-grow: 1;
+        min-width: 25rem;
         width: 50%;
         height: 100vh;
         background-size: cover;
@@ -18,7 +21,7 @@
         text-align: center;
         padding: 1rem 2rem;
         border-radius: 20px;
-        width: 23rem;
+        width: clamp(15rem, 100%, 23rem);
     }
     .nurse__section {
         background-image: url("../img/nurse__background.png");
@@ -41,6 +44,14 @@
             &:hover {
                 background-color: var(--opposite-main-hover-color);
             }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .content {
+        section {
+            height: 50vh;
         }
     }
 }

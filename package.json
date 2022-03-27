@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass ./assets/scss/pages:./assets/css -w"
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "compile:sass": "sass ./src/assets/scss/pages:./src/assets/css -w"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.48.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0"
   }
 }
