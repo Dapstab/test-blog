@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy && sass ./src/scss/pages:./src/css --style compressed --no-source-map",
+    "build": "sass ./src/scss/pages:./src/css --style compressed --no-source-map && eleventy",
     "sass": "sass ./src/scss/pages:./src/css -w"
   },
   "author": "",
