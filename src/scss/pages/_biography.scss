@@ -1,0 +1,16 @@
+body {
+    background: black;
+}
+
+.biography__content {
+    display: flex;
+    margin: 7% 40% 0 auto;
+    h1 {
+        color: white;
+        font-family: "Impact";
+        letter-spacing: 2.5px;
+    }
+    .content__container {
+        flex-direction: column;
+    }
+}

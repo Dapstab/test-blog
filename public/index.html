@@ -1,30 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camilo Arzuza</title>
-    <link rel="stylesheet" href="/assets/css/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camilo Arzuza</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-    <header>
+
+  <header>
     <a href="/"><img src="/assets/img/logo.png" alt="Logo del blog"></a>
     <nav>
-
+        <ul>
+            <li><a href="/">Portafolio</a></li>
+            <li><a href="/postHome">Blog</a></li>
+        </ul>
     </nav>
-</header> 
-    <main class="content">
-        <div class="title__container">
-            <h1 class="main__title">WELCOME TO MY <a class="blog__link" href="/careers">BLOG</a></h1>
-            <img src="./assets/img/camiloarzuza.png" alt="">
-            <p>Hello, I'm <a class="about__link" href="/biography">Camilo Arzuza</a>, Electronic Engineer and Nurse.</p>
-        </div>
-    </main>
-    <footer>
+</header>
+    
+    
+<main class="home__content">
+    <div class="title__container">
+        <h1 class="main__title">WELCOME TO MY <a class="blog__link" href="/careers">BLOG</a></h1>
+        <img src="./assets/img/camiloarzuza.png" alt="">
+        <p>Hello, I'm <a class="about__link" href="/biography">Camilo Arzuza</a>, Electronic Engineer and Nurse.</p>
+    </div>
+</main>
+
+  <footer>
     <img src="/assets/img/logo.png" alt="Logo del blog">
     @ 2022 Camila Arzuza
-</footer> 
+</footer>
+
+  <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
 </body>
 </html>

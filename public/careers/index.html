@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carreras</title>
-    <link rel="stylesheet" href="/assets/css/careers.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-    <main class="content">
-        <section class="engineer__section">
-            <a href="/projects-electronic-engineering.html">Ingeniería Electrónica</a>
-        </section>
-        <section class="nurse__section">
-            <a href="/projects-nurse.html">Salud</a>
-        </section>
-    </main>
+
+  <header>
+    <a href="/"><img src="/assets/img/logo.png" alt="Logo del blog"></a>
+    <nav>
+        <ul>
+            <li><a href="/">Portafolio</a></li>
+            <li><a href="/postHome">Blog</a></li>
+        </ul>
+    </nav>
+</header>
+    
+    <main class="careers__content">
+    <section class="engineer__section">
+        <a href="/projects-electronic-engineering.html">Ingeniería Electrónica</a>
+    </section>
+    <section class="nurse__section">
+        <a href="/projects-nurse.html">Salud</a>
+    </section>
+</main>
+
+  <footer>
+    <img src="/assets/img/logo.png" alt="Logo del blog">
+    @ 2022 Camila Arzuza
+</footer>
+
+  <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
 </body>
 </html>

@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy",
-    "compile:sass": "sass ./src/assets/scss/pages:./src/assets/css -w"
+    "build": "eleventy && sass ./src/scss/pages:./src/css --style compressed --no-source-map",
+    "sass": "sass ./src/scss/pages:./src/css -w"
   },
   "author": "",
   "license": "ISC",
