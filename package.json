@@ -6,7 +6,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "sass ./src/scss/pages:./src/css --style compressed --no-source-map && eleventy",
-    "sass": "sass ./src/scss/pages:./src/css -w"
+    "sass": "sass ./src/scss/pages:./src -w"
   },
   "author": "",
   "license": "ISC",
